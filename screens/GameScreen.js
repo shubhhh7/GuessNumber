@@ -16,11 +16,11 @@ const GameScreen = props => {
 const [currentGuess,setCurrentGuess]=useState(generateRandomBetween(1,100,props.userChoice));
 return(
     <View style={styles.screen}>
-        <Text>Opponent's Guess</Text>
+        <Text>Opponent's  Guess</Text>
         <NumberContainer>{currentGuess}</NumberContainer>
         <Card style={styles.buttonContainer}>
-            <Button title="LOWER"   onPress={()=>{}}/>
-            <Button title="GREATER" onPress={()=>{}}/>
+            <Button title="LOWER "   onPress={()=>{}}/>
+            <Button title="GREATER " onPress={()=>{}}/>
         </Card>
     </View>
 )
